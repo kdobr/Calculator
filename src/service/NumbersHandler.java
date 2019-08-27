@@ -4,7 +4,7 @@ import exeption.CalcWrongDataExeption;
 
 public class NumbersHandler {
 	
-	public static char oper;
+	private static char oper;
 	
 	public static int[] handleNumbers (String[] arr) {
 		
@@ -44,6 +44,11 @@ public class NumbersHandler {
 		num2Rom = num2Rom != 0 ? num2Rom : Integer.parseInt(arr[2]);
 		
 		return new int[] {num1Rom, num2Rom};
+		
+	}
+	
+	public static char getOper() {
+		return oper;
 		
 	}
 

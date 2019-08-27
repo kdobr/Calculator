@@ -19,7 +19,7 @@ public class CalculatorAppl {
 			String[] stringArr = br.readLine().split("\\s");
 			int[] numAarr  = NumbersHandler.handleNumbers(stringArr);
 
-			Calculator.calculate(numAarr[0], NumbersHandler.oper, numAarr[1]);
+			Calculator.calculate(numAarr[0], NumbersHandler.getOper(), numAarr[1]);
 
 		} catch (CalcWrongDataExeption e) {
 			System.err.println(e.getMessage());
